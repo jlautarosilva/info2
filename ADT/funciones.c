@@ -1,13 +1,14 @@
 void menu(){
-    float a, b, res;
+    int a, b, res;
     int opcion;
     
     while(opcion != 0){
-        printf("Ingrese el primer valor: ");
-        scanf("%f", &a);
+        printf("\nIngrese el primer valor: ");
+        scanf("%d", &a);
         printf("Ingrese el segundo valor: ");
-        scanf("%f",&b);
-        printf("\n1.- Sumar \n2.- Restar \n3.- Multiplicar \n4.- Dividir \n0.- Salir");
+        scanf("%d",&b);
+        printf("1.- Sumar \n2.- Restar \n3.- Multiplicar \n4.- Dividir \n0.- Salir \n");
+        printf("Que operacion desea realizar?: ");
         scanf("%d",&opcion);
         
         switch(opcion){
@@ -30,13 +31,13 @@ void menu(){
     } 
 }
 
-int suma(int x, int y){
+int sumar(int x, int y){
     int z;
     z=x+y;
     return z;
 }
 
-int resta(int x, int y){
+int restar(int x, int y){
     int z;
     z = x-y;
     return z;
@@ -48,7 +49,7 @@ int multiplicar(int x, int y){
     return z;
 }
 
-float dividir(int x, int y){
+int dividir(int x, int y){
     int z;
     z = x/y;
     return z;
