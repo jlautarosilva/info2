@@ -7,7 +7,7 @@ int main(){
 	char caracter;
 	//Creacion del archivo te texto con permiso de lectura y escritura
 	file =fopen ("texto.txt","rt");
-		while(file)){
+		while(file){
 		fscanf(file,"%c",caracter);
 		printf("%c",caracter);
 	}

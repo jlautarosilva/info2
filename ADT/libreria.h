@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int sumar();
-int restar();
-int multiplicar();
-float dividir();
 void menu();
+int sumar(int x, int y);
+int restar(int x, int y);
+int multiplicar(int x, int y);
+int dividir(int x, int y);
 
 #include "funciones.c"
